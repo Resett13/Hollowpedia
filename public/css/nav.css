@@ -1,0 +1,98 @@
+/* Estilos para o Nav */
+nav {
+    background-color: #0f0f1b;
+    height: 50px; /* Altura fixa para o nav */
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 30px; /* Espaço entre os itens de navegação */
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0; /* Remove margens negativas */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Transição suave para a transformação */
+    text-align: justify;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre os itens do menu */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Transição suave para todo o li */
+}
+
+nav ul li:hover {
+    transform: translateY(-4px); /* Faz a palavra subir suavemente */
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transform: translateY(20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover ul {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown ul li {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown ul li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos do botão com ícone */
+.btSom button {
+    color: #565a75;
+    background: none; /* Remove o fundo */
+    border: none; /* Remove a borda */
+    padding: 5px; /* Adiciona um pouco de espaçamento interno */
+    cursor: pointer; /* Aponta o cursor quando passa por cima */
+    margin-right: 5%;
+}
+
+.btSom button svg {
+    transition: color 0.3s ease; /* Faz o ícone mudar de cor suavemente */
+}
+
+.btSom button:hover svg {
+    color: #ccc; /* Muda a cor do ícone ao passar o mouse */
+}
