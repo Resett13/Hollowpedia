@@ -24,7 +24,7 @@
 
     <script>// Inicializa o áudio
 let audio = document.getElementById("bg-audio");
-let maxVolume = 0.5;
+let maxVolume = 1.0;
 let fadeTime = 3000; // Tempo de fade-in em milissegundos
 
 // Define o volume inicial como 0.0
